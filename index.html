@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>JQuery UI</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" defer></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" defer></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js" defer></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js" defer></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.theme.default.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js" defer></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/main.js" defer></script>
+</head>
+
+<body>
+	<div class="container">
+
+		<h2 class="text-uppercase mt-3">Bootstrap
+			<a class="btn btn-link" data-fancybox="docs" data-caption="Bootstrap Documentation" data-type="iframe" href="https://getbootstrap.com/docs">
+				<i class="far fa-file-alt"></i>
+				<span>Docs</span>
+			</a>
+		</h2>
+		<a class="btn btn-light mb-3" data-fancybox="video" href="https://www.youtube.com/watch?v=2JMMnNOhDoc">
+			<i class="fab fa-youtube"></i>
+			<span>New in Bootstrap 4 (Youtube video)</span>
+		</a>
+		<h3 class="text-muted">Tooltip</h3>
+		<button type="button" class="btn btn-success mb-2" data-toggle="tooltip" data-html="true" title="<b class='text-success'>Success</b> button">Tooltip 1</button>
+		<button class="btn btn-warning mb-2" data-toggle="tooltip" title="Warning button">Tooltip 2</button>
+		<button class="btn btn-danger mb-2" data-toggle="tooltip" title="Danger button">Tooltip 3</button>
+
+		<hr>
+
+		<h3 class="text-muted">Modal</h3>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Show modal</button>
+
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalLabel">Modal title</h5>
+						<button class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h4>FancyBox + Owl</h4>
+						<div class="owl-carousel owl-theme" id="modal-carousel">
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/97/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/97/2560x1440/img.jpg">
+							</a>
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/98/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/98/2560x1440/img.jpg">
+							</a>
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/99/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/99/2560x1440/img.jpg">
+							</a>
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/100/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/100/2560x1440/img.jpg">
+							</a>
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/101/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/101/2560x1440/img.jpg">
+							</a>
+							<a data-fancybox="modal-carousel" href="http://freshwallpapers.net/download/102/2560x1440/img.jpg">
+								<img src="http://freshwallpapers.net/download/102/2560x1440/img.jpg">
+							</a>
+						</div>
+						<h4>FancyBox</h4>
+						<div class="row no-gutters" id="modal-gallery">
+							<div class="col-md">
+								<a data-fancybox="modal-gallery" data-caption="IMG 1" href="http://freshwallpapers.net/download/93/2560x1440/img.jpg">
+									<img class="img-fluid" src="http://freshwallpapers.net/download/93/2560x1440/img.jpg">
+								</a>
+								<a data-fancybox="modal-gallery" data-caption="IMG 2" href="http://freshwallpapers.net/download/94/2560x1440/img.jpg">
+									<img class="img-fluid" src="http://freshwallpapers.net/download/94/2560x1440/img.jpg">
+								</a>
+							</div>
+							<div class="col-md">
+								<a data-fancybox="modal-gallery" data-caption="IMG 3" href="http://freshwallpapers.net/download/95/2560x1440/img.jpg">
+									<img class="img-fluid" src="http://freshwallpapers.net/download/95/2560x1440/img.jpg">
+								</a>
+								<a data-fancybox="modal-gallery" data-caption="IMG 4" href="http://freshwallpapers.net/download/96/2560x1440/img.jpg">
+									<img class="img-fluid" src="http://freshwallpapers.net/download/96/2560x1440/img.jpg">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2 class="text-uppercase">JQuery UI
+			<a class="btn btn-link" data-fancybox="docs" data-caption="JQuery UI Documentation" data-type="iframe" href="http://api.jqueryui.com">
+				<i class="far fa-file-alt"></i>
+				<span>Docs</span>
+			</a>
+		</h2>
+		<h3 class="text-muted">Datepicker</h3>
+		<p>Date:
+			<input type="text" data-toggle="datepicker" placeholder="Select date">
+		</p>
+
+		<hr>
+
+		<h3 class="text-muted">Checkbox</h3>
+		<fieldset>
+			<legend>Hotel Ratings: </legend>
+			<label for="checkbox-1">2 Star</label>
+			<input type="checkbox" name="checkbox-1" id="checkbox-1">
+			<label for="checkbox-2">3 Star</label>
+			<input type="checkbox" name="checkbox-2" id="checkbox-2">
+			<label for="checkbox-3">4 Star</label>
+			<input type="checkbox" name="checkbox-3" id="checkbox-3">
+			<label for="checkbox-4">5 Star</label>
+			<input type="checkbox" name="checkbox-4" id="checkbox-4">
+		</fieldset>
+
+		<hr>
+
+		<h3 class="text-muted">Spinner</h3>
+		<p>
+			<label for="spinner">Select a value:</label>
+			<input id="spinner" name="value">
+		</p>
+		<p>
+			<button class="ui-btn" id="disable">Toggle disable/enable</button>
+			<button class="ui-btn" id="destroy">Toggle widget</button>
+		</p>
+		<p>
+			<button class="ui-btn" id="getvalue">Get value</button>
+			<button class="ui-btn" id="setvalue">Set value to 5</button>
+		</p>
+
+		<hr>
+
+		<h3 class="text-muted">Droppable</h3>
+		<div class="dd-wrap">
+			<div id="droppable" class="ui-widget-header mb-1">Drop here</div>
+			<div id="draggable" class="ui-widget-content">Drag me to my target</div>
+		</div>
+
+		<hr>
+
+		<h3 class="text-muted">Sortable</h3>
+		<ul id="sortable">
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+			<li class="ui-state-default p-1 mb-1">
+				<span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+		</ul>
+
+		<hr>
+
+		<h2 class="text-uppercase">Fancybox
+			<a class="btn btn-link" data-fancybox="docs" data-caption="Fancybox Documentation" data-type="iframe" href="https://fancyapps.com/fancybox/3/docs">
+				<i class="far fa-file-alt"></i>
+				<span>Docs</span>
+			</a>
+		</h2>
+		<div class="row no-gutters" id="main-gallery">
+			<div class="col-sm">
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/103/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/103/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/104/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/104/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/105/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/105/2560x1440/img.jpg">
+				</a>
+			</div>
+			<div class="col-sm">
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/106/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/106/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/107/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/107/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/108/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/108/2560x1440/img.jpg">
+				</a>
+			</div>
+			<div class="col-sm">
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/109/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/109/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/110/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/110/2560x1440/img.jpg">
+				</a>
+				<a data-fancybox="gallery" href="http://freshwallpapers.net/download/111/2560x1440/img.jpg">
+					<img class="img-fluid" src="http://freshwallpapers.net/download/111/2560x1440/img.jpg">
+				</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2 class="text-uppercase">Owl Carousel 2
+			<a class="btn btn-link" data-fancybox="docs" data-caption="Owl Carousel Documentation" data-type="iframe" href="https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html">
+				<i class="far fa-file-alt"></i>
+				<span>Docs</span>
+			</a>
+		</h2>
+		<div class="owl-carousel owl-theme" id="main-carousel">
+			<img src="http://freshwallpapers.net/download/112/2560x1440/img.jpg">
+			<img src="http://freshwallpapers.net/download/113/2560x1440/img.jpg">
+			<img src="http://freshwallpapers.net/download/114/2560x1440/img.jpg">
+			<img src="http://freshwallpapers.net/download/115/2560x1440/img.jpg">
+			<img src="http://freshwallpapers.net/download/116/2560x1440/img.jpg">
+			<img src="http://freshwallpapers.net/download/117/2560x1440/img.jpg">
+		</div>
+
+		<hr>
+
+		<footer>
+			<h2 class="text-uppercase mb-3">Footer</h2>
+		</footer>
+	</div>
+</body>
+
+</html>
